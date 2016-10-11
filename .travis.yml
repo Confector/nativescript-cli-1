@@ -17,7 +17,7 @@ before_script:
 - npm test
 - node_modules/.bin/grunt enableScripts:true
 script:
-- node_modules/.bin/grunt lint
+- # node_modules/.bin/grunt lint
 - node_modules/.bin/grunt pack --no-color
 after_success:
 - rm -rf s3-publish
